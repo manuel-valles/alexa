@@ -1,0 +1,116 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "example flashcards",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "SetMyLanguageIntent",
+                  "slots": [
+                      {
+                          "name": "languages",
+                          "type": "languages"
+                      }
+                  ],
+                  "samples": [
+                      "{languages}",
+                      "Practice {languages}",
+                      "Test my {languages} knowledge"
+                  ]
+              },
+              {
+                  "name": "AnswerIntent",
+                  "slots": [
+                      {
+                          "name": "answer",
+                          "type": "answer"
+                      }
+                  ],
+                  "samples": [
+                      "It's {answer}",
+                      "It is {answer}",
+                      "I think it's {answer}",
+                      "Is it {answer}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "languages",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "ruby"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "python"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "javascript"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "answer",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "lowercase"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "capitalized"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "console.log"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "puts"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "print"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "len"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "length"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
